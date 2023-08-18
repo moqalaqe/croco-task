@@ -1,0 +1,53 @@
+<section class="userDetails">
+  <h1>User Information</h1>
+  <h5>
+    name: <span>{{ user.name }}</span>
+  </h5>
+  <h5>
+    username: <span>{{ user.username }}</span>
+  </h5>
+  <h5>
+    email: <span>{{ user.email }}</span>
+  </h5>
+  <h5>
+    phone: <span>{{ user.phone }}</span>
+  </h5>
+  <h5>
+    website: <span>{{ user.website }}</span>
+  </h5>
+  <h5>
+    address:
+    <h6>
+      street: <span>{{ user.address.street }}</span>
+    </h6>
+    <h6>
+      suite: <span>{{ user.address.suite }}</span>
+    </h6>
+    <h6>
+      city: <span>{{ user.address.city }}</span>
+    </h6>
+    <h6>
+      zipcode: <span>{{ user.address.zipcode }}</span>
+    </h6>
+    <h6>
+      geo: <span>{{ user.address.geo.lat }}</span>
+    </h6>
+    <h6>
+      geo: <span>{{ user.address.geo.lng }}</span>
+    </h6>
+  </h5>
+  <h5>
+    company:
+    <h6>
+      company name: <span>{{ user.company.name }}</span>
+    </h6>
+    <h6>
+      catchPhrase: <span>{{ user.company.catchPhrase }}</span>
+    </h6>
+    <h6>
+      bs: <span>{{ user.company.bs }}</span>
+    </h6>
+  </h5>
+
+  <button (click)="handleClick(user.id)">მომხმარებლის პოსტები</button>
+</section>

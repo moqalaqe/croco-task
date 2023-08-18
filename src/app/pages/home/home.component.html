@@ -1,0 +1,21 @@
+<section class="home">
+  <h1>Users List</h1>
+
+  <table>
+    <thead>
+      <th>Fullname</th>
+      <th>username</th>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let item of users">
+        <tr>
+          <td>{{ item.name }}</td>
+          <td>{{ item.username }}</td>
+          <td>
+            <button (click)="handleClick(item.id)">Details</button>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</section>

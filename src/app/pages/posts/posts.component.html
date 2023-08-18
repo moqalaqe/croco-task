@@ -1,0 +1,21 @@
+<section class="posts">
+  <ng-container *ngIf="chosenPost; else default">
+    <div class="chosenCard">
+      <h6>{{ chosenPost.title }}</h6>
+      <p>{{ chosenPost.body }}</p>
+    </div>
+  </ng-container>
+
+  <ng-template #default>
+    <h1>აირჩიე პოსტი</h1>
+  </ng-template>
+
+  <div class="postsContainer">
+    <ng-container *ngFor="let item of posts">
+      <div class="card" (click)="handleChoosePost(item)">
+        <h6>{{ item.title }}</h6>
+        <p>{{ item.body }}</p>
+      </div>
+    </ng-container>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+@import "../../../assets/scss/variables.scss";
+
+.home {
+  table {
+    width: 100%;
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    th {
+      font-size: 14px;
+      opacity: 0.7;
+      text-transform: capitalize;
+      padding: 10px;
+      text-align: left;
+    }
+
+    td {
+      padding: 10px 5px;
+    }
+
+    tr {
+      transition: $transition;
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+
+    button {
+      padding: 6px 12px;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      border: none;
+      border-radius: 20px;
+      margin: 0 auto;
+      transition: $transition;
+      border: 1px solid black;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
